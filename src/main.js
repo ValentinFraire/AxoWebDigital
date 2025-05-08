@@ -1,7 +1,15 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+import { createPinia } from 'pinia'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
+import './style.css'
+import {createHead } from '@vueuse/head'
 
-createApp(App).mount('#app').use(bootstrap);
+const app = createApp(App)
+const pinia = createPinia()
+const head = createHead()
+
+app.use(pinia)
+app.use(head)
+app.mount('#app')
