@@ -33,7 +33,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import { useMailStore } from './mailStore'
+import { useMailStore } from '../../stores/mailStore'
 
 export default defineComponent({
     setup() {
