@@ -13,7 +13,7 @@
 
 <script setup>
 
-import correo from './stores/correo.vue';
+import correo from './components/contactanos/correo.vue';
 
 
 </script>
